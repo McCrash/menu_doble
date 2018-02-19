@@ -11,10 +11,12 @@ import android.view.ViewGroup;
  * Created by luis on 30/01/2018.
  */
 
-public class Fragmento1 extends Fragment {
+public class FragmentMenuPrincipal extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragmento1, container, false);
+        return  inflater.inflate(R.layout.fragment_menu_principal, container, false);
+        
     }
+
 }

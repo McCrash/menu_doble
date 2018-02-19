@@ -10,10 +10,10 @@ import android.util.Log;
  * Created by luis on 30/01/2018.
  */
 
-public class Paginador extends FragmentPagerAdapter {
+public class PaginadorMenu extends FragmentPagerAdapter {
     Fragment[] fragmentos=new Fragment[2];
 
-    public Paginador(FragmentManager fm) {
+    public PaginadorMenu(FragmentManager fm) {
 
         super(fm);
     }
@@ -23,11 +23,11 @@ public class Paginador extends FragmentPagerAdapter {
         Log.v("posicion", "posicion:"+position);
         if (position==0)
         {
-            return new Fragmento1();
+            return new FragmentMenuComunidades();
         }
         else
         {
-            return new Fragmento2();
+            return new FragmentMenuPrincipal();
         }
     }
 
